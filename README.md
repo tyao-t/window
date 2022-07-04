@@ -1,0 +1,3 @@
+# Window - A congestion-controlled and pipelined Network RDT protocol
+
+Implemented **TCP’s Reliable Data Transfer (RDT)** of packets between a **Python server and a C/C++ client (and vice versa) using UDP and sockets**. Designed and coded a highly robust strategy of handling packet loss, packet reordering, and duplicate packets. Programmed an unreliable network emulator to emulate occasional or frequent data loss and delay with adjustable parameters, one using **thread pools** and another using **asyncio coroutines** to speed up I/O-heavy tasks (socket’s `recv_from` & `send_to`, and sleeping). Built and used **thread-safe list and queue containers** for data manipulation and flow control (e.g. congestion sliding window, ACKs).
